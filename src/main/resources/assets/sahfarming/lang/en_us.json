@@ -1,0 +1,13 @@
+{
+  "item.sahfarming.grape_seeds": "Grape Seeds",
+  "item.sahfarming.grapes": "Grapes",
+  "block.sahfarming.grape_crop": "Grape Vines",
+  "item.sahfarming.fermenting_barrel": "Fermenting Barrel",
+  "block.sahfarming.fermenting_barrel": "Fermenting Barrel",
+  "container.sahfarming.fermenting_barrel": "Fermenting Barrel",
+  "tooltip.sahfarming.fermenting_barrel.base": "Base liquid (bucket)",
+  "tooltip.sahfarming.fermenting_barrel.ingredient_fmt": "Ingredient (%s)",
+  "tooltip.sahfarming.fermenting_barrel.fuel_fmt": "Fermenting fuel (%s)",
+  "tooltip.sahfarming.fermenting_barrel.yeast_line1": "Yeast slot - coming in v2",
+  "tooltip.sahfarming.fermenting_barrel.yeast_line2": "Fruits already contain wild yeasts"
+}

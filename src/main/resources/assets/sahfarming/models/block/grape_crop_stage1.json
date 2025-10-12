@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "sahfarming:block/grape_crop_stage1"
+  }
+}

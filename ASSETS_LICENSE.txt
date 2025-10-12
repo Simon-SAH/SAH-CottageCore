@@ -1,0 +1,8 @@
+Assets License (CC BY 4.0)
+
+Unless stated otherwise, all artwork in `src/main/resources/assets/noflamesmoke`
+(e.g. icon.png, textures/gui/nfs_splash.png) is licensed under:
+Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Attribution: SAH
+License text: https://creativecommons.org/licenses/by/4.0/

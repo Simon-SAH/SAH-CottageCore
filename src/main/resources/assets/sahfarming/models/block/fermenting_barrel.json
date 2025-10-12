@@ -1,0 +1,8 @@
+{
+  "parent": "sahfarming:block/cube_bottom_top",
+  "textures": {
+    "bottom": "sahfarming:block/fermenting_barrel_bottom",
+    "top":    "sahfarming:block/fermenting_barrel_top",
+    "side":   "sahfarming:block/fermenting_barrel_side"
+  }
+}

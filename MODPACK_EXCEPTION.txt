@@ -1,0 +1,10 @@
+Modpack Exception
+
+You are allowed to include the compiled "No Flame & Smoke" (unmodified JAR)
+in public or private modpacks, free or paid, provided that:
+(a) you credit the author "SAH" and the project name,
+(b) you link to the project page/repository if available,
+(c) you do not misrepresent authorship.
+
+This exception concerns distribution of the compiled mod only. All artwork
+remains licensed as stated in ASSETS_LICENSE.txt.

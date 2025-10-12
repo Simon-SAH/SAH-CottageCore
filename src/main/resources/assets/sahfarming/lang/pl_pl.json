@@ -1,0 +1,13 @@
+{
+  "item.sahfarming.grape_seeds": "Nasiona winogron",
+  "item.sahfarming.grapes": "Winogrona",
+  "block.sahfarming.grape_crop": "Winorośl",
+  "item.sahfarming.fermenting_barrel": "Beczka fermentacyjna",
+  "block.sahfarming.fermenting_barrel": "Beczka fermentacyjna",
+  "container.sahfarming.fermenting_barrel": "Beczka fermentacyjna",
+  "tooltip.sahfarming.fermenting_barrel.base": "Płyn bazowy (wiadro)",
+  "tooltip.sahfarming.fermenting_barrel.ingredient_fmt": "Surowiec (%s)",
+  "tooltip.sahfarming.fermenting_barrel.fuel_fmt": "Paliwo fermentacyjne (%s)",
+  "tooltip.sahfarming.fermenting_barrel.yeast_line1": "Slot drożdży - w wersji 2",
+  "tooltip.sahfarming.fermenting_barrel.yeast_line2": "Owoce zawierają własne dzikie drożdże"
+}

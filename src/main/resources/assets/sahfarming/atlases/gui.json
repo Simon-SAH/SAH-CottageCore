@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "type": "directory",
+      "source": "sahfarming:textures/gui/sprites"
+    },
+    {
+      "type": "directory",
+      "source": "sahfarming:textures/gui/container",
+      "prefix": "container/"
+    }
+  ]
+}

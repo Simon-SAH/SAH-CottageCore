@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "sahfarming",
+  "version": "${version}",
+  "name": "SAH Project: CottageCore",
+  "description": "Brew, cook and grow your way into a cozy rustic lifestyle.",
+  "environment": "*",
+  "entrypoints": {
+    "main":   ["com.sah.farming.FarmingMod"],
+    "client": ["com.sah.farming.SahFarmingClient", "com.sah.farming.FarmingModClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.8",
+    "fabric-api": "*"
+  }
+}
