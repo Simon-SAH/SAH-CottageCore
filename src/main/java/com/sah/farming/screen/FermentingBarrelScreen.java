@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import com.mojang.blaze3d.pipeline.RenderPipeline;
+import com.mojang.blaze3d.systems.RenderSystem;
 
 import java.lang.reflect.Method;
 import java.util.List;
@@ -86,6 +87,9 @@ public class FermentingBarrelScreen extends HandledScreen<FermentingBarrelScreen
                     w, ARROW_H,
                     ARROW_W, ARROW_H);
         }
+        // 🔧 Reset kontekstu renderowania, aby przywrócić poprawne alpha dla reszty GUI
+        ctx.drawTexture(RenderPipelines.GUI_TEXTURED, Identifier.of("minecraft", "textures/gui/demo_background.png"),
+                -9999, -9999, 0f, 0f, 1, 1, 1, 1);
     }
 
     @Override

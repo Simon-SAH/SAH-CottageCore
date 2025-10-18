@@ -19,6 +19,8 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.server.world.ServerWorld;
+import com.sah.farming.registry.ModParticles;
 
 public class FermentingBarrelBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, InventoryChangedListener {
     // Sloty
@@ -29,7 +31,7 @@ public class FermentingBarrelBlockEntity extends BlockEntity implements NamedScr
     public static final int SLOT_OUT  = 4;     // wynik
     public static final int SLOT_COUNT = 5;
 
-    private static final int MAX_TICKS = 200;  // ~10s (20t/s) – łatwo zauważyć w teście
+    private static final int MAX_TICKS = 600;  // ~10s (20t/s) – łatwo zauważyć w teście
 
     private final SimpleInventory inventory = new SimpleInventory(SLOT_COUNT);
     private final ArrayPropertyDelegate props = new ArrayPropertyDelegate(2); // [0]=progress, [1]=max
@@ -60,7 +62,7 @@ public class FermentingBarrelBlockEntity extends BlockEntity implements NamedScr
 
     @Override
     public void onInventoryChanged(Inventory inv) {
-        if (this.world == null || this.world.isClient) return;
+        if (this.world == null || this.world.isClient()) return;
 
         boolean hasBase      = !inventory.getStack(SLOT_BASE).isEmpty();
         boolean hasDirection = !inventory.getStack(SLOT_DIR).isEmpty();
@@ -87,7 +89,7 @@ public class FermentingBarrelBlockEntity extends BlockEntity implements NamedScr
     /* =================== Tick (serwer) =================== */
 
     public static void serverTick(World world, BlockPos pos, BlockState state, FermentingBarrelBlockEntity be) {
-        if (world.isClient) return;
+        if (world.isClient()) return;
 
         if (!be.fermenting) return;
 
@@ -115,6 +117,19 @@ public class FermentingBarrelBlockEntity extends BlockEntity implements NamedScr
             // otwórz wieko + dźwięk
             be.openLidIfClosed();
         }
+        // 💨 Cząsteczki fermentacji (opary)
+        if (be.fermenting) {
+            ((ServerWorld) world).spawnParticles(
+                    ModParticles.FERMENTATION,
+                    pos.getX() + 0.5,
+                    pos.getY() + 1.1,
+                    pos.getZ() + 0.5,
+                    2,
+                    0.05, 0.05, 0.05,
+                    0.01
+            );
+        }
+
     }
 
     /* =================== Pomocnicze =================== */

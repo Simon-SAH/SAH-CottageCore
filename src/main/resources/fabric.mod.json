@@ -7,9 +7,9 @@
   "environment": "*",
   "entrypoints": {
     "main":   ["com.sah.farming.FarmingMod"],
-    "client": ["com.sah.farming.SahFarmingClient", "com.sah.farming.FarmingModClient"]
+    "client": ["com.sah.farming.FarmingModClient"]
   },
-  "mixins": [],
+
   "depends": {
     "fabricloader": ">=0.16.0",
     "minecraft": ">=1.21.8",

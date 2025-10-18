@@ -1,38 +1,47 @@
-# No Flame & Smoke
+# SAH Project: CottageCore
 
-Wyłączaj **płomień** i **dym** dla pochodni, świec i pieców — per-blok lub globalnie.  
-Działa na **Fabric Loader** dla wersji **Minecraft 1.21.x**. **Fabric API nie jest wymagane.**
-
----
-
-## ✨ Funkcje
-
-- Przełączniki *Flame* i *Smoke* dla:
-    - zwykłych, redstone, soul oraz (przyszłościowo) copper torches — także wersji ściennych
-    - świec (candles)
-    - pieców: **Furnace**, **Smoker**, **Blast Furnace**
-- Globalne „**All Flames** / **All Smoke**” + „**Apply to all**” i „**Restore vanilla**”
-- Listę można przewijać; scrollbar korzysta z **vanilla** tekstury (`sprites/widget/scroller.png`), więc automatycznie pasuje do paczek zasobów.
-
-> **UI semantyka:**  
-> „**ON**” = efekt widoczny (vanilla), „**OFF**” = efekt ukryty przez moda.
+🍇 Przytulny mod do Minecrafta, który dodaje winogrona, fermentację i rustykalne elementy życia na farmie.  
+Zaprojektowany z myślą o prostocie i immersji.
 
 ---
 
-## 🧭 Jak otworzyć ekran konfiguracji
+## ✨ Funkcje (v0.1.0)
 
-- przez **Mod Menu** ➜ *No Flame & Smoke* ➜ **Config**  
-  *(jeśli masz Mod Menu)*
-- lub inną drogą, jeśli dodałeś wejście do swojego menu (mod udostępnia własny `NFSConfigScreen`).
+- **Winogrona** – Niestandardowa uprawa z realistycznymi fazami wzrostu.
+- **Nasiona winogron** – Wypadają z wysokiej trawy lub możliwe do stworzenia ręcznie.
+- **Beczka fermentacyjna** – Nowy blok z GUI do fermentacji płynów (WIP).
+- **Partikle fermentacji** – Subtelne efekty wizualne sygnalizujące aktywną fermentację.
+- **Modularna budowa** – W planach kolejne moduły (gotowanie, uprawy, destylacja).
 
-Plik konfiguracyjny: `config/noflamesmoke.json`
+---
 
-Przykład (skrócony):
-```json
-{
-  "disableAllFlames": false,
-  "disableAllSmoke": false,
-  "torch": { "flame": false, "smoke": false },
-  "candles": { "flame": true, "smoke": false },
-  "furnace": { "flame": false, "smoke": true }
-}
+## 🧪 Kompatybilność
+
+- Minecraft **1.21.9–1.21.10**
+- Fabric Loader + Fabric API `0.132.0+1.21.9`
+- Kompatybilny z większością modów rolniczych.
+- Kompilacja z użyciem **Loom 1.11-SNAPSHOT** i Gradle 8.5
+
+---
+
+## 🧭 Roadmap
+
+Wkrótce:
+
+- 🍷 Fermentowane napoje (np. wino)
+- 🥤 Kontenery z GUI
+- 🍞 System gotowania
+- 🍋 Dodatkowe uprawy (chmiel, ryż, cytryny itd.)
+
+---
+
+## 📁 Instalacja
+
+1. Zainstaluj [Fabric Loader](https://fabricmc.net/) oraz [Fabric API](https://modrinth.com/mod/fabric-api).
+2. Pobierz najnowszą wersję z [Modrinth](https://modrinth.com/mod/sah-cottagecore) lub [GitHuba](https://github.com/Simon-SAH/SAH-CottageCore).
+3. Włóż plik `.jar` do katalogu `mods/`.
+
+---
+
+## 🧙‍♂️ Mod ID
+

@@ -11,8 +11,12 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
         mavenCentral()
+        // główny Fabric
         maven { url = "https://maven.fabricmc.net/" }
+            // Terraformers, Shedaniel, Mojang
         maven { url = "https://maven.terraformersmc.com/releases/" }
+        maven { url = "https://maven.shedaniel.me/" }
+        maven { url = "https://libraries.minecraft.net/" }
     }
 }
 

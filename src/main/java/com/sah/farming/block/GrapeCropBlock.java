@@ -57,7 +57,7 @@ public class GrapeCropBlock extends CropBlock {
 
         // 1) Mączka kostna: zawsze +1 poziom (nie przeskakuje)
         if (!held.isEmpty() && held.isOf(Items.BONE_MEAL) && age < this.getMaxAge()) {
-            if (!world.isClient) {
+            if (!world.isClient()) {
                 world.setBlockState(pos, this.withAge(age + 1), Block.NOTIFY_LISTENERS);
                 if (!player.getAbilities().creativeMode) held.decrement(1);
                 world.emitGameEvent(player, GameEvent.BLOCK_CHANGE, pos);
@@ -71,7 +71,7 @@ public class GrapeCropBlock extends CropBlock {
             int base = (age == getMaxAge()) ? 2 : 1; // 2–3 z dojrzałego, 1–2 z „prawie”
             int count = base + rng.nextInt(2);
 
-            if (!world.isClient) {
+            if (!world.isClient()) {
                 player.giveItemStack(new ItemStack(ModItems.GRAPES, count));
                 world.setBlockState(pos, this.withAge(1), Block.NOTIFY_LISTENERS);
                 try {
@@ -91,7 +91,7 @@ public class GrapeCropBlock extends CropBlock {
 
     // Gwarantowany drop nasion przy zniszczeniu (fallback niezależny od loot_tables)
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             dropStack(world, pos, new ItemStack(ModItems.GRAPE_SEEDS, 1));
         }
         return super.onBreak(world, pos, state, player);

@@ -25,7 +25,7 @@ public class GrapeSeedsItem extends Item {
         BlockPos up = pos.up();
         if (!world.getBlockState(up).isAir()) return ActionResult.FAIL;
 
-        if (!world.isClient) {
+        if (!world.isClient()) {
             world.setBlockState(up, ModBlocks.GRAPE_CROP.getDefaultState());
             if (ctx.getPlayer() != null && !ctx.getPlayer().getAbilities().creativeMode) {
                 ctx.getStack().decrement(1);

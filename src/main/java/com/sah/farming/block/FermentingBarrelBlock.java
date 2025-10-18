@@ -52,7 +52,7 @@ public class FermentingBarrelBlock extends BlockWithEntity {
     // celowo bez @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos,
                               PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             BlockEntity be = world.getBlockEntity(pos);
             boolean canOpenLid = true;
             if (be instanceof FermentingBarrelBlockEntity barrelBE) {
@@ -88,7 +88,7 @@ public class FermentingBarrelBlock extends BlockWithEntity {
             net.minecraft.block.BlockState state,
             net.minecraft.block.entity.BlockEntityType<T> type
     ) {
-        if (world.isClient) return null;
+        if (world.isClient()) return null;
 
         // Zwracamy ticker tylko dla naszej beczki
         if (type == com.sah.farming.registry.ModBlockEntities.FERMENTING_BARREL) {

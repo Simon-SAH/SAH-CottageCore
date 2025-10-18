@@ -1,16 +1,33 @@
-# Changelog
-All notable changes to this project will be documented in this file.
+# Changelog – SAH Project: CottageCore
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [v0.1.0] – 2025-10-17
 
-## [1.0.0] - 2025-08-17
 ### Added
-- Config screen with **per-block** and **per-effect** (Flame/Smoke) toggles:
-  Torch, Wall Torch, Redstone Torch, Wall Redstone Torch, Soul Torch, Wall Soul Torch, Candles, Furnace, Smoker, Blast Furnace.
-- Global toggles: “All Flames”, “All Smoke”, **Apply to all**, **Restore vanilla**.
-- Mod Menu integration (optional).
-- Resource-pack friendly UI (vanilla separators & scroller).
+- Grapes crop with growth stages
+- Grape seeds item
+- Fermentation barrel block (functional, WIP)
+- Particle effects for fermentation
+- Basic configuration, translations, and project structure
 
-### Notes
-- Client-side only. Works on 1.21.x.
+### Upcoming
+- Fermented items (e.g., wine, cider)
+- Brewing and cooking systems
+- Additional crops and containers
+
+---
+
+## Po polsku
+
+## [v0.1.0] – 2025-10-17
+
+### Dodano
+- Uprawa winogron z etapami wzrostu
+- Przedmiot: nasiona winogron
+- Blok: beczka fermentacyjna (funkcjonalna, WIP)
+- Efekty cząsteczkowe fermentacji
+- Wstępna struktura projektu i tłumaczenia
+
+### W planach
+- Fermentowane produkty (np. wino, cydr)
+- Systemy gotowania i destylacji
+- Dodatkowe rośliny i pojemniki
